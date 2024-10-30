@@ -131,11 +131,3 @@
   register: result
   until: result.rc == 0
   notify: start gluster volume
-
-- name: Set Gluster volume cache size
-  shell: gluster volume set data-volume performance.cache-size 900MB
-  retries: 3
-  delay: 1
-  register: result
-  until: result.rc == 0
-  notify: start gluster volume cache size
