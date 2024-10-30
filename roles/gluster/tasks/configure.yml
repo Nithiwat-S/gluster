@@ -132,6 +132,6 @@
   until: result.rc == 0
   notify: start gluster volume
 
-- name: Set Gluster volume cache size
-  command: gluster volume set data-volume performance.cache-size 900MB
-  when: ansible_setup is succeeded
+#- name: Set Gluster volume cache size
+#  command: gluster volume set data-volume performance.cache-size 900MB
+#  when: ansible_setup is succeeded
