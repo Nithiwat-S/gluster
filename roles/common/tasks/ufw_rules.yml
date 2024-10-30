@@ -46,9 +46,7 @@
     rule: allow
     port: '49152:60999'
     proto: tcp
-    from_ip: "192.168.0.0/16"
-  loop: "{{ gluster_data.client }}"
-  when: client_ips is defined
+    from_ip: '192.168.0.0/16'
 
 # async to avoid connection disruption
 - name: Enable ufw
