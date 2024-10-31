@@ -89,7 +89,7 @@
     options:
       { transport.address-family: inet,
         nfs.disable: 'on',
-        performance.cache-size: '900MB',
+        performance.cache-size: '999MB',
         cluster.server-quorum-type: 'server',
         features.cache-invalidation: 'on',
         performance.stat-prefetch: 'on',
