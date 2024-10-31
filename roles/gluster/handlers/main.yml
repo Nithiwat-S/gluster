@@ -10,6 +10,3 @@
   gluster.gluster.gluster_volume:
     state: started
     name: data-volume
-
-- name: Set Gluster volume cache size
-  shell: gluster volume set data-volume performance.cache-size 900MB
